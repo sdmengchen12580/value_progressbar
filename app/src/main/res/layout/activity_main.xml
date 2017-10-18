@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.natasa.progresspercent.MainActivity">
+
+    <com.natasa.progresspercent.lib.CircularProgress
+        android:id="@+id/circular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:background_stroke_width="3dp"
+        app:progress="0"
+        app:stroke_width="3dp" />
+
+    <com.natasa.progresspercent.lib.LineProgress
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:layout_below="@+id/circular"
+        android:layout_margin="10dp"
+        app:background_stroke_width="2dp"
+        app:progress="0"
+        app:progress_color="@color/colorPrimary"
+        app:stroke_width="3dp" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</LinearLayout>
